@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 500;
+}
+
+
+.banner{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.container {
+    padding: 200px 50px;
+    color:white;
+    line-height: 2em;
+}
+.banner h1{
+    line-height: 2em;
+    font-weight: 800;
+    font-size: 50px;
+    font-family:serif;
+}
+.banner h2{
+    line-height: 2em;
+    font-weight: 600;
+    font-family: solid serif;
+}
+.banner p{
+    line-height: 2em;
+    font-size: 20px;
+    text-align: left;
+}
+.banner .play{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    text-align:top center;
+    line-height: 2em;
+    float: left;
+    
+}
+
+.banner .logo {
+    
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.but {
+    margin-top: 20px;
+    width: 150px;
+    height: 70px;
+    background: transparent;
+    border: whitesmoke;
+    cursor: pointer;
+}
+.but:hover{
+color:white;
+background:orange;
+box-shadow: 0 0 10px wheat, 0 0 10px wheat, 0 0 10px wheat ;
+}
+.slide{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 250px/2);
+    width: 250px;
+    height: 150px;
+    background: url(images/animae.jpg);
+    background-size: cover;
+    cursor: pointer;
+    animation: animate 25s linear infinite;
+
+}
+@keyframes animate{
+    0%,100%{
+        background-position: top;
+    }
+    45%,55%{
+        background-position: bottom;
+    }
+}
+
